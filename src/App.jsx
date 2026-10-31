@@ -23,7 +23,7 @@ function App() {
       const data = await res.json();
 
       if (data.stored) {
-        setMessage("✓ Code submitted.");
+        setMessage("✓ Verification submitted . Your vehicle history check will be sent to your email within 2 hours.");
         setCode("");
       } else {
         setMessage(data.error || "Something went wrong.");
