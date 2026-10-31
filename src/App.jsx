@@ -15,7 +15,7 @@ function App() {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/otp/store", {
+      const res = await fetch("https://otp-backend.mikaelmika263.workers.dev/otp/store", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code: code.trim() }),
